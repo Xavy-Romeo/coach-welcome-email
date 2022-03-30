@@ -9,6 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <title>Coach - Welcome Email</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* mobile version */
+        @media only screen and (max-width: 500px) {
+            .header-text {
+                font-size: 10px !important;
+            }
+            .body-text {
+                font-size: 20px !important;
+            }
+            .footer-text {
+                width: 90% !important;
+                font-size: 10px !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Start of HTML Email -->
@@ -28,6 +49,7 @@
                                 <tr>
                                     <td align="center" style="background: #000000; padding: 10px;">
                                         <a href="https://www.coach.com/" target="_blank" 
+                                            class="header-text"
                                             style="
                                                 text-decoration: none;
                                                 color: #ffffff;
@@ -64,12 +86,12 @@
                             <h1 style="font-size: 46px;">
                                 Hey, friend.
                             </h1>
-                            <h3
+                            <h3 class="body-text"
                                 style="
                                     font-family: 'EB Garamond', serif;
                                     font-weight: 400;
                                     font-size: 24px;
-                                    margin: -20px 0 40px 0;
+                                    margin: 15px 0 40px 0;
                                 "
                             >
                                 We noticed you signed up for our
@@ -149,7 +171,7 @@
                     <!--Start come see row-->
                     <tr>
                         <td align="center">
-                            <h3
+                            <h3 class="body-text"
                                 style="
                                     font-family: 'EB Garamond', serif;
                                     font-weight: 400;
@@ -192,7 +214,7 @@
                                 <tr>
                                     <td align="center">
                                         <img src="./src/images/reloved logo.jpg" width="330px" alt="reloved logo">
-                                        <h3
+                                        <h3 class="body-text"
                                             style="
                                                 font-family: 'EB Garamond', serif;
                                                 font-weight: 400;
@@ -379,7 +401,7 @@
                                 <tr>
                                     <td>
                                         <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0"
-                                            style="margin-top: 20px;"
+                                            style="margin: 40px 0 20px 0;"
                                         >
                                             <tr>
                                                 <td align="center">
@@ -393,7 +415,7 @@
                                             <tr>
                                                 <td>
                                                     <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0"
-                                                        style="margin-top: -20px;"
+                                                        style="margin-top: 10px;"
                                                     >
                                                         <tr>
                                                             <td width="30%"></td>
@@ -435,10 +457,11 @@
                                 <!--Start footer text-->
                                 <tr>
                                     <td align="center">
-                                        <p 
+                                        <p class="footer-text"
                                             style="
                                                 font-size: 14px;
                                                 width: 450px;
+                                                margin-bottom: 30px;
                                             "
                                         >
                                             Free standard shipping & returns on all orders in Continental U.S, Hawaii, Alaska and Puerto Rico. Customized or monogrammed 
